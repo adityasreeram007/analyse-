@@ -1,0 +1,72 @@
+.imagelogo{
+  width: 60px;
+  height:40px;
+}
+.navi{
+  background-color: #0088cc;
+}
+/* body{
+  background-color: #bfbfbf;
+} */
+body {
+    background:
+-webkit-linear-gradient(DarkSlateGray,Cyan);
+   /* background:
+     -o-linear-gradient(DarkSlateGray,Cyan);
+    background:
+   -moz-linear-gradient(DarkSlateGray,Cyan);
+    background:
+        linear-gradient(DarkSlateGray,Cyan);
+    min-height: 100%; */
+}
+html {height: 100%;overflow:hidden}
+
+.circle{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50px;
+  margin: auto;
+  position: absolute;
+  /* top: 38%; */
+  left: 42%;
+  text-align: center;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: DarkSlateGray;
+}
+
+.text{
+  /* top: inherit; */
+  /* text-align: center; */
+  margin-top: 75px;
+  /* margin-left: 10px; */
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.7, 1);
+  color: black;
+  font-size: 30px;
+}
+
+@keyframes move {
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 0.1;
+    }
+    50%{
+      opacity: 0.4;
+    }
+    75%{
+      opacity: 0.6;
+    }
+    90%{
+      opacity: 0.8
+    }
+    100%{
+      opacity: 1;
+    }
+}
