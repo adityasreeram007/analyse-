@@ -7,14 +7,318 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="tele.js"></script>
-  <link rel='stylesheet' href="{{url_for('static',filename='telegrame.css')}}">
+  <!-- <script src="tele.js"></script> -->
+  <!-- link rel='stylesheet' href="{{url_for('static',filename='telegrame.css')}}"> -->
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 </head>
+<style>
+.imagelogo{
+  width: 60px;
+  height:40px;
+}
+.navi{
+  background-color: #0088cc;
+}
+/* body{
+  background-color: #bfbfbf;
+} */
+
+body {
+background-color:#111;
+}
+
+
+/* @mixin radial-gradient($from, $to) {
+	background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+	background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background-color: $from;
+} */
+
+/* .radial {
+	@include radial-gradient(#555A5F, #000);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+} */
+html {height: 100%;overflow:}
+
+.circle{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50px;
+  margin: auto;
+  position: absolute;
+  /* top: 38%; */
+  left: 42%;
+  top:25%;
+  text-align: center;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: DarkSlateGray;
+}
+
+.text{
+  /* top: inherit; */
+  /* text-align: center; */
+  margin-top: 10%;
+   margin-left: 20%;
+
+  color: black;
+  font-size: 30px;
+}
+.test1{
+  animation-name: move;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.7, 1);
+}
+.test2{
+  animation-name: move;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.7, 1);
+}
+.test3{animation-name: move;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: linear;
+animation-timing-function: cubic-bezier(0.2, 0.1, 0.7, 1);
+}
+.test4{
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.7, 1);
+}
+.test5{
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.7, 1);
+
+}
+@keyframes move {
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 0.1;
+    }
+    50%{
+      opacity: 0.4;
+    }
+    75%{
+      opacity: 0.6;
+    }
+    90%{
+      opacity: 0.8
+    }
+    100%{
+      opacity: 1;
+    }
+}
+.bg1 {
+  background-image:url("https://internetofbusiness.com/wp-content/uploads/2018/04/internet-security-640x480.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg2 {
+  background-image:url("https://cdn-images-1.medium.com/max/854/1*60gs-SFYyooZZBxatuoNJw.jpeg");
+  background-size: cover;
+  background-position: center;
+
+}
+.bg3 {
+  background-image:url("http://www.wecaredigital.in/wp-content/uploads/Analyse_1080x675.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg4 {
+  background-image:url("https://www.securitymagazine.com/ext/resources/secenews/2016/data-900.jpg?1462906505");
+  background-size: cover;
+  background-position: center;
+}
+.bg5 {
+  background-image:url("");
+  background-size: cover;
+  background-size: 250px auto;
+}
+.cube {
+  position: relative;
+  width: 250px;
+  height:230px;
+  background: #336699;
+  float:left;
+  margin:10px 10px 80px 10px;
+  overflow: hidden;
+  color:white;
+}
+.dashboard {
+  max-width:1080px;
+  margin:90px auto;
+}
+
+.slideTextUp div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding:15px;
+}
+.h1
+{
+
+  
+}
+.slideTextUp div:nth-child(2) {
+  top: 100%;
+}
+
+.slideTextUp:hover div {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.slideTextRight img {
+  margin-top:20px;
+}
+
+.slideTextRight div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding:15px;
+}
+.slideTextRight div:nth-child(2) {
+  left: 100%;
+}
+.slideTextRight:hover div {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.slideTextBottom img {
+  margin-top:20px;
+}
+.slideTextBottom div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding:15px;
+}
+
+.slideTextBottom div:nth-child(2) {
+  top: -100%;
+}
+
+.slideTextBottom:hover div {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.slideTextLeft img {
+  margin-top:20px;
+}
+
+.slideTextLeft div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding:15px;
+}
+
+.slideTextLeft div:nth-child(2) {
+  left: -100%;
+}
+
+.slideTextLeft:hover div {
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+h1{
+  background: url('https://i.imgur.com/3W7yR.jpg');
+  background-clip: text;
+  color: rgba(255,255,255,0.25);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 70px;
+  letter-spacing: -2px;
+  margin-left: 440px;
+  margin-top: 200px;
+}
+.content {
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  margin-top:-9%;
+}
+p{
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+</style>
 <body >
-{% if error %}
-  <p><strong>Error:</strong> {{ error }}
-{% endif %}
+
 <nav class="navbar navbar-inverse" >
 
   <div class="container-fluid">
@@ -23,10 +327,8 @@
 
       <a class="navbar-brand" href="https://web.telegram.org"><span class="glyphicon glyphicon-send" style="margin-left:40px;"></span> Telegram</a>
     </div>
-    <ul class="nav navbar-nav">
-      <!-- <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> Home</a></li> -->
-    </ul>
-    <!-- <a href="poweroff.html" class="navbar-right"><span class="glyphicon glyphicon-off" style="color:white;margin-top:21px;margin-left:30px;margin-right:20px;transform:scale(1.7)"></span> -->
+    
+
     <a href="groups.html" class="navbar-right"><img src="{{url_for('static',filename='work-team.jpg')}}" style="height:30px; width: 30px; margin:13px 15px 15px 15px; border-radius: 5px;"></a>
     <form class="navbar-form navbar-right" action="/action_page.php">
       <div class="form-group">
@@ -52,7 +354,7 @@
     </div>
 <div class="content">
     <div class="dashboard">
-				      <h1> Hello!</h1>
+				      <h1> Hello !</h1>
 
         <!-- <div class="info">
           <a href="https://www.grandvincent-marion.fr" target="_blank"><p> Made with <i class="fa fa-heart"></i> by Marion Grandvincent </p>

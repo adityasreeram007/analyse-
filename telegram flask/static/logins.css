@@ -1,5 +1,5 @@
 body {
-  background: #0d8aa5;
+  /* background: #0d8aa5; */
 }
 
 .login-box {
@@ -16,7 +16,7 @@ img{
   width:100px;
 }
 .block{
- display: :inline;
+ display: inline;
  background-color: #111;
 }
 /* .center-block{
