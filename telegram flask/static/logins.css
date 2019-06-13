@@ -16,7 +16,7 @@ img{
   width:100px;
 }
 .block{
- display:inline;
+ display: :inline;
  background-color: #111;
 }
 /* .center-block{
@@ -24,14 +24,10 @@ img{
 } */
 .well{
   background-color: white;
-  margin-top:7%;
 }
 .logo {
  height: 70px;
  margin-bottom: 30px;
-}
-.input-group{
-  margin-top: 10px;
 }
 .form-control {
  margin-bottom: 20px;
